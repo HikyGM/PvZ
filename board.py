@@ -20,8 +20,6 @@ class Board:
         self.plant_sprites = pygame.sprite.Group()
         self.resize(self.width, self.height)
 
-
-
     def resize(self, width, height):
         width_ratio = width / self.width
         height_ratio = height / self.height
@@ -47,6 +45,8 @@ class Board:
         for sprite in self.all_sprites:
             if isinstance(sprite, Sunflower):
                 sprite.resize(self.cell_w, self.cell_h)
+
+
 
     def set_plant(self, cell):
         if self.board[cell[0]][cell[1]] == 0:

@@ -24,7 +24,7 @@ class Sunflower(Plant):
         # Движение
         self.frames_idle_count = 0
         self.frames_idle = sunflower
-        self.animation_speed = 5  # Новый атрибут: каждый 5-й кадр будет обновляться анимация
+        self.animation_speed = 10  # Новый атрибут: каждый 5-й кадр будет обновляться анимация
         self.animation_counter = 0  # Счетчик для отслеживания кадров
 
     def update(self, *args, **kwargs):
