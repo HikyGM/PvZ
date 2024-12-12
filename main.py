@@ -50,6 +50,7 @@ class Game:
                     self.bg = self.bg.subsurface(pygame.Rect(0, 0, 1000, 600))
                     self.bg = pygame.transform.scale(self.bg, self.size_window)
                     board.resize(*self.size_window)
+
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     cell = board.get_click(event.pos)
                     if cell:
